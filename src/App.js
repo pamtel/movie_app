@@ -17,7 +17,7 @@ const App = () => {
   }, [FetchMovies]);
   console.log('result', result);
   return (
-    <div>
+    <div className="app">
       <div className="header">
         <p className="logo">MyTestApp</p>
       </div>
@@ -27,7 +27,26 @@ const App = () => {
       <Search />
       {/* {result &&
         result.map((data, index) => <Movies key={index} data={data} />)} */}
-      <Movies result={result} />
+      <div className="container">
+        <h2>Movie header</h2>
+        <div className="wrapper">
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+        </div>
+      </div>
+      <div className="container">
+        <h2>Movie header</h2>
+        <div className="wrapper">
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+          <Movies result={result} />
+        </div>
+      </div>
     </div>
   );
 };
