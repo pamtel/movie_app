@@ -65,7 +65,16 @@
     text-align: center;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 67px;
+  }
+  .logo {
+    font-size: 16px;
+    /* font-weight: bold;
+    border: 1px solid var(--white);
+    padding: 10px 17px; */
+  }
   .hero-text {
     max-width: 70%;
     font-size: 30px;
