@@ -15,7 +15,6 @@ const App = () => {
   useEffect(() => {
     FetchMovies();
   }, [FetchMovies]);
-  console.log('result', result);
   return (
     <div className="app">
       <div className="header">
