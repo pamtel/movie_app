@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  height: 140px;
+  color: var(--white);
+  background-color: var(--primary);
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.logo {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid var(--white);
+  padding: 10px 17px;
+}
+.hero {
+  width: 100%;
+  height: 550px;
+  background-image: url('./assest/hero.png');
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  max-width: 40%;
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--white);
+  padding: 20px;
+}
+.search {
+  padding: 20px;
+}
+.movies {
+  padding: 20px;
+}
+.movie-box {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 12px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
